@@ -1,3 +1,35 @@
+// NOTA: In caso di parole "strane" / lettere mancanti, è causato dalla tastiera che non prende l'input in modo ottimale //
+
+Questo file ha lo scopo di spiegare il contenuto delle cartelle varie e spiegare l'interpretazione della consegna
+
+
+Interpretazione della Consegna:
+Il Touring Club Italiano, vuole promuovere le località d'interesse turistico e le relative attrazioni.
+Per questo richiede un'applicativo/sito web che permetta all'utente finale di :
+	- Avere una ricerca facilitata delle destinazioni più adatte in base ai suoi interessi
+	- Visualizzare informazioni rilevanti sulle varie mete (orari, date disponibili, persone presenti)
+	- Possibilità d'acquisto online di pass giornalieri/settimanali
+		- All'acquisto l'utente vedrà il numero di pass già prenotati per il periodo scelto in modo da poter evitare code
+
+// Altro non specificato se visualizzabili dall'utente oppure solamente dallo staff (Touring Club)
+   In base al testo viene percepito che le successive richieste sono visualizzabili solamente dall'API HTTP //
+
+- Contapersone, numero di persone in entrata/uscita/presenti :
+	- nell'ultima ora
+	- media, mostrando il numero minimo,medio e massimo di persona PER ORA!
+- Permanenza media delle persone (in minuti) delle persone DENTRO in base all'ora di ingresso
+
+
+
+Materiale Vario | Cartella: Materiale Vario
+La cartella contiene:
+	- Personas
+	- CJM
+	- Percorso interazioni
+	- Struttura DATI json utilizzata per il Punto #8 (SPA) e Punto #9 (Documentazione API)
+
+
+
 Punto #7 (sviluppo) | Cartella : FrontEndStatico
 La cartella contiene i seguenti file
 	- index.html

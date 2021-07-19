@@ -5,46 +5,417 @@ import { Injectable } from '@angular/core';
 })
 export class ServiceApiService {
 
+
   data = [
     {
-      "id": 0,
-      "nome": "Tempestive S.p.A",
-      "descrizioneCorta": "Descrizione dell'azienda introduttiva",
-      "descrizioneCompleta": "Descrizione completa dell'azienda , quello che fa, ciò che offre ecc",
-      "link": "https://tempestive.it/",
-      "posizione": "Pordenone",
-      "distanza": "28",
-      "immagine": "https://upload.wikimedia.org/wikipedia/commons/3/3a/M%C3%BCnster%2C_LVM%2C_B%C3%BCrogeb%C3%A4ude_--_2013_--_5149-51.jpg"
+      "nome": "Colosseo",
+      "localita": ["Roma"],
+      "tipoInterese": ["Storico", "Paesaggistico"],
+      "descrizione": "The Colosseum, also named the Flavian Amphitheater, is a large amphitheater in Rome. It was built during the reign of the Flavian emperors as a gift to the Roman people.",
+      "popolarita": 5,
+      "stato": {
+        "aperto": true,
+        "causaChiusura": null,
+        "periodoApertura": "Tutto l'anno",
+        "orari": {
+          "apertura": "9:00",
+          "chiusura": "22:30"
+        }
+      },
+      "prevendite": {
+        "giornaliero": [
+          {
+            "giorno": "23/08/2021",
+            "quantita": 123
+          },
+          {
+            "giorno": "24/08/2021",
+            "quantita": 87
+          },
+          {
+            "giorno": "25/08/2021",
+            "quantita": 102
+          }
+          ],
+        "settimanale": [
+          {
+            "periodo": {
+            "da": "21/08/2021",
+            "a":"28/08/2021"
+              
+            },
+            "quantita": 57
+          }
+          ]
+      },
+      "contapersone": {
+        "entrate": {
+          "ultimaOra": 423,
+          "mediaOra": {
+            "minimo": 359,
+            "media": 467,
+            "massimo": 842
+          }
+        },
+        "uscite": {
+          "ultimaOra": 272,
+          "mediaOra": {
+            "minimo": 123,
+            "media": 251,
+            "massimo": 300
+          }
+        },
+        "presenti": {
+          "ultimaOra": 423,
+          "mediaOra": {
+            "minimo": 353,
+            "media": 521,
+            "massimo": 784
+          },
+          "permanenza": [
+            {
+              "oraIngresso": "9:00",
+              "tempo": "230"
+            },
+            {
+              "oraIngresso": "10:00",
+              "tempo": "200"
+            },
+            {
+              "oraIngresso": "11:00",
+              "tempo": "177"
+            }
+            ]
+        }
+      }
     },
     {
-      "id": 1,
-      "nome": "Martelli S.p.A",
-      "descrizioneCorta": "Descrizione dell'azienda introduttiva",
-      "descrizioneCompleta": "Descrizione completa dell'azienda , quello che fa, ciò che offre ecc",
-      "link": "https://Martell.it/",
-      "posizione": "Sacile",
-      "distanza": "10",
-      "immagine": "https://upload.wikimedia.org/wikipedia/commons/3/3a/M%C3%BCnster%2C_LVM%2C_B%C3%BCrogeb%C3%A4ude_--_2013_--_5149-51.jpg"
+      "nome": "Piazza San Marco",
+      "localita": ["Venezia"],
+      "tipoInterese": ["Storico", "Paesaggistico"],
+      "descrizione": "Piazza San Marco often known in English as St Mark's Square, is the principal public square of Venice, Italy",
+      "popolarita": 5,
+      "stato": {
+        "aperto": true,
+        "causaChiusura": null,
+        "periodoApertura": "Tutto l'anno",
+        "orari": {
+          "apertura": "9:00",
+          "chiusura": "22:30"
+        }
+      },
+      "prevendite": {
+        "giornaliero": [
+          {
+            "giorno": "23/08/2021",
+            "quantita": 123
+          },
+          {
+            "giorno": "24/08/2021",
+            "quantita": 87
+          },
+          {
+            "giorno": "25/08/2021",
+            "quantita": 102
+          }
+          ],
+        "settimanale": [
+          {
+            "periodo": {
+            "da": "21/08/2021",
+            "a":"28/08/2021"
+              
+            },
+            "quantita": 57
+          }
+          ]
+      },
+      "contapersone": {
+        "entrate": {
+          "ultimaOra": 423,
+          "mediaOra": {
+            "minimo": 359,
+            "media": 467,
+            "massimo": 842
+          }
+        },
+        "uscite": {
+          "ultimaOra": 272,
+          "mediaOra": {
+            "minimo": 123,
+            "media": 251,
+            "massimo": 300
+          }
+        },
+        "presenti": {
+          "ultimaOra": 423,
+          "mediaOra": {
+            "minimo": 353,
+            "media": 521,
+            "massimo": 784
+          },
+          "permanenza": [
+            {
+              "oraIngresso": "9:00",
+              "tempo": "230"
+            },
+            {
+              "oraIngresso": "10:00",
+              "tempo": "200"
+            },
+            {
+              "oraIngresso": "11:00",
+              "tempo": "177"
+            }
+            ]
+        }
+      }
     },
     {
-      "id": 2,
-      "nome": "Alex S.p.A",
-      "descrizioneCorta": "Descrizione dell'azienda introduttiva",
-      "descrizioneCompleta": "Descrizione completa dell'azienda , quello che fa, ciò che offre ecc",
-      "link": "https://Martell.it/",
-      "posizione": "Roma",
-      "distanza": "1235",
-      "immagine": "https://upload.wikimedia.org/wikipedia/commons/3/3a/M%C3%BCnster%2C_LVM%2C_B%C3%BCrogeb%C3%A4ude_--_2013_--_5149-51.jpg"
+      "nome": "Galleria degli Uffizi",
+      "localita": ["Firenze"],
+      "tipoInterese": ["Artistico", "storico"],
+      "descrizione": "The Uffizi Gallery (Galleria degli Uffizi), is a prominent art museum",
+      "popolarita": 5,
+      "stato": {
+        "aperto": true,
+        "causaChiusura": null,
+        "periodoApertura": "Tutto l'anno",
+        "orari": {
+          "apertura": "9:00",
+          "chiusura": "22:30"
+        }
+      },
+      "prevendite": {
+        "giornaliero": [
+          {
+            "giorno": "23/08/2021",
+            "quantita": 123
+          },
+          {
+            "giorno": "24/08/2021",
+            "quantita": 87
+          },
+          {
+            "giorno": "25/08/2021",
+            "quantita": 102
+          }
+          ],
+        "settimanale": [
+          {
+            "periodo": {
+            "da": "21/08/2021",
+            "a":"28/08/2021"
+              
+            },
+            "quantita": 57
+          }
+          ]
+      },
+      "contapersone": {
+        "entrate": {
+          "ultimaOra": 423,
+          "mediaOra": {
+            "minimo": 359,
+            "media": 467,
+            "massimo": 842
+          }
+        },
+        "uscite": {
+          "ultimaOra": 272,
+          "mediaOra": {
+            "minimo": 123,
+            "media": 251,
+            "massimo": 300
+          }
+        },
+        "presenti": {
+          "ultimaOra": 423,
+          "mediaOra": {
+            "minimo": 353,
+            "media": 521,
+            "massimo": 784
+          },
+          "permanenza": [
+            {
+              "oraIngresso": "9:00",
+              "tempo": "230"
+            },
+            {
+              "oraIngresso": "10:00",
+              "tempo": "200"
+            },
+            {
+              "oraIngresso": "11:00",
+              "tempo": "177"
+            }
+            ]
+        }
+      }
     },
     {
-      "id": 3,
-      "nome": "Luca S.p.A",
-      "descrizioneCorta": "Descrizione dell'azienda introduttiva",
-      "descrizioneCompleta": "Descrizione completa dell'azienda , quello che fa, ciò che offre ecc",
-      "link": "https://Martell.it/",
-      "posizione": "Milano",
-      "distanza": "745",
-      "immagine": "https://upload.wikimedia.org/wikipedia/commons/3/3a/M%C3%BCnster%2C_LVM%2C_B%C3%BCrogeb%C3%A4ude_--_2013_--_5149-51.jpg"
+      "nome": "Cinque Terre",
+      "localita": ["Firenze", "Roma"],
+      "tipoInterese": ["Paesaggistico"],
+      "descrizione": "The Uffizi Gallery (Galleria degli Uffizi), is a prominent art museum",
+      "popolarita": 5,
+      "stato": {
+        "aperto": true,
+        "causaChiusura": null,
+        "periodoApertura": "Tutto l'anno",
+        "orari": {
+          "apertura": "9:00",
+          "chiusura": "22:30"
+        }
+      },
+      "prevendite": {
+        "giornaliero": [
+          {
+            "giorno": "23/08/2021",
+            "quantita": 123
+          },
+          {
+            "giorno": "24/08/2021",
+            "quantita": 87
+          },
+          {
+            "giorno": "25/08/2021",
+            "quantita": 102
+          }
+          ],
+        "settimanale": [
+          {
+            "periodo": {
+            "da": "21/08/2021",
+            "a":"28/08/2021"
+              
+            },
+            "quantita": 57
+          }
+          ]
+      },
+      "contapersone": {
+        "entrate": {
+          "ultimaOra": 423,
+          "mediaOra": {
+            "minimo": 359,
+            "media": 467,
+            "massimo": 842
+          }
+        },
+        "uscite": {
+          "ultimaOra": 272,
+          "mediaOra": {
+            "minimo": 123,
+            "media": 251,
+            "massimo": 300
+          }
+        },
+        "presenti": {
+          "ultimaOra": 423,
+          "mediaOra": {
+            "minimo": 353,
+            "media": 521,
+            "massimo": 784
+          },
+          "permanenza": [
+            {
+              "oraIngresso": "9:00",
+              "tempo": "230"
+            },
+            {
+              "oraIngresso": "10:00",
+              "tempo": "200"
+            },
+            {
+              "oraIngresso": "11:00",
+              "tempo": "177"
+            }
+            ]
+        }
+      }
+    },
+    {
+      "nome": "Costiera Amalfitana",
+      "localita": ["Pordenone", "Sacile"],
+      "tipoInterese": ["Paesaggistico"],
+      "descrizione": "The Uffizi Gallery (Galleria degli Uffizi), is a prominent art museum",
+      "popolarita": 5,
+      "stato": {
+        "aperto": true,
+        "causaChiusura": null,
+        "periodoApertura": "Tutto l'anno",
+        "orari": {
+          "apertura": "9:00",
+          "chiusura": "22:30"
+        }
+      },
+      "prevendite": {
+        "giornaliero": [
+          {
+            "giorno": "23/08/2021",
+            "quantita": 123
+          },
+          {
+            "giorno": "24/08/2021",
+            "quantita": 87
+          },
+          {
+            "giorno": "25/08/2021",
+            "quantita": 102
+          }
+          ],
+        "settimanale": [
+          {
+            "periodo": {
+            "da": "21/08/2021",
+            "a":"28/08/2021"
+              
+            },
+            "quantita": 57
+          }
+          ]
+      },
+      "contapersone": {
+        "entrate": {
+          "ultimaOra": 423,
+          "mediaOra": {
+            "minimo": 359,
+            "media": 467,
+            "massimo": 842
+          }
+        },
+        "uscite": {
+          "ultimaOra": 272,
+          "mediaOra": {
+            "minimo": 123,
+            "media": 251,
+            "massimo": 300
+          }
+        },
+        "presenti": {
+          "ultimaOra": 423,
+          "mediaOra": {
+            "minimo": 353,
+            "media": 521,
+            "massimo": 784
+          },
+          "permanenza": [
+            {
+              "oraIngresso": "9:00",
+              "tempo": "230"
+            },
+            {
+              "oraIngresso": "10:00",
+              "tempo": "200"
+            },
+            {
+              "oraIngresso": "11:00",
+              "tempo": "177"
+            }
+            ]
+        }
+      }
     }
   ]
   
