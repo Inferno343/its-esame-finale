@@ -73,6 +73,6 @@ La cartella contiene screenshot relativi alle schermate del progetto "statico" e
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Documentazione API | Cartella : BackEnd
-La cartella contiene un progetto NODE.JS
+La cartella contiene il file "Documentazione API.txt"
 
-Per la documentazione dell'api ho utilizzato fastify + swagger
+Il file contiene la documentazione della chiamata API

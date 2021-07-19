@@ -1,0 +1,76 @@
+La richiesta per quanto riguarda la chiamata API è :
+Documentare una chiamata delle API che fornisca le informazioni relative all'affluenza dello scenario
+Ovvero i dati ricevuti dai contapersone presenti in ogni attrazione
+
+I dati registrati sono : ingressi, uscite, persone presenti all'interno e permanenza media delle persone
+
+
+
+Descrizione della response :
+
+Entrate/Uscite/presenti
+    ultimaOra: Numero di persone ENTRATE/USCITE/PRESENTI nell'ora precedente alla richiesta all'API
+    mediaOra: Numero medio di persone all'ora di un certo periodo (non specificato nel testo)
+        minimo: numero minimo registrato di persone
+        media: media di persone registrata
+        massimo: numero massimo registrato di persone
+
+Permanenza
+    oraIngresso: l'ora dalla quale si tiene conto il tempo medio di permanenza (es. dall'ora 9:00)
+    tempo: tempo medio di permanenza delle persone
+
+
+
+
+
+
+
+GET /attrazione/:idAttrazione/contapersone
+
+es:   /attrazione/0/contapersone
+
+RESPONSE
+code 200
+
+body
+
+{
+    "entrate": {                // Dati relativi alle persone ENTRATE
+        "ultimaOra": 423,
+        "mediaOra": {
+          "minimo": 359,
+          "media": 467,
+          "massimo": 842
+        }
+    },
+    "uscite": {                // Dati relativi alle persone USCITE
+        "ultimaOra": 272,
+        "mediaOra": {
+          "minimo": 123,
+          "media": 251,
+          "massimo": 300
+        }
+    },
+    "presenti": {              // Dati relativi alle persone PRESENTI
+        "ultimaOra": 423,
+        "mediaOra": {
+            "minimo": 353,
+            "media": 521,
+            "massimo": 784
+    },
+    "permanenza": [           // Dati relativi alla permanenza delle persone all'interno dell'attrazione
+        {
+        "oraIngresso": "9:00",
+        "tempo": "230"
+        },
+        {
+        "oraIngresso": "10:00",
+        "tempo": "200"
+        },
+        {
+        "oraIngresso": "11:00",
+        "tempo": "177"
+        }
+        ]
+    }
+}
