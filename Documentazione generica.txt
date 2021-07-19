@@ -1,3 +1,6 @@
+LINK repository github: https://github.com/Inferno343/its-esame-finale
+
+
 // NOTA: In caso di parole "strane" / lettere mancanti, è causato dalla tastiera che non prende l'input in modo ottimale //
 
 Questo file ha lo scopo di spiegare il contenuto delle cartelle varie e spiegare l'interpretazione della consegna
