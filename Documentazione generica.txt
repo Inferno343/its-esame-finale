@@ -19,7 +19,7 @@ Per questo richiede un'applicativo/sito web che permetta all'utente finale di :
 	- media, mostrando il numero minimo,medio e massimo di persona PER ORA!
 - Permanenza media delle persone (in minuti) delle persone DENTRO in base all'ora di ingresso
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Materiale Vario | Cartella: Materiale Vario
 La cartella contiene:
@@ -28,7 +28,7 @@ La cartella contiene:
 	- Percorso interazioni
 	- Struttura DATI json utilizzata per il Punto #8 (SPA) e Punto #9 (Documentazione API)
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Punto #7 (sviluppo) | Cartella : FrontEndStatico
 La cartella contiene i seguenti file
@@ -45,3 +45,34 @@ La schermata scelta è la schermata "Home" e contiene come descritto nel Punto #
 	- Funzionalità aggiuntive: 
 		- All'hover su una categoria, questa verrà ingrandita in modo che l'immagine sia più visibile all'utente
 		- All'hover sull'immagine di un'attrazione, questa verrà ingradita in modo che l'utente possa avere una visione migliore dell'attrazione 
+
+Punto #8 (sviluppo) | Cartella: FrontEndAngular
+La cartella contiene i file del progetto Angular
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// TUTTE LE IMMAGINI SONO CASUALI, PRESE DA UN'API ESTERNA (https://picsum.photos/) //
+
+Le schermate scelte del flusso sono :
+	- Home contenente:
+		- Categorie (tipi d'interesse) che al click portano ad una lista con le attrazioni della cateoria selezionata
+		- Lista attrazioni disponibili
+			- Al click del pulsante "Dettaglio" si viene portati alla schermata di dettagli
+	- Categorie contenente:
+		- Lista delle attrazioni della categoria selezionata
+	- Dettaglio contenene:
+		- Più dettagli relativi all'attrazione
+		- Una galleria immagini 
+		- Lista dei pass disponibili con relativo pulsante "Acquista" (che secondo il flusso descritto in #3 porta ad una pagina d'acquisto più dettagliata)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Screenshot | Cartella: Screenshot delle schermate
+La cartella contiene screenshot relativi alle schermate del progetto "statico" e della SPA (angular)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Documentazione API | Cartella : BackEnd
+La cartella contiene un progetto NODE.JS
+
+Per la documentazione dell'api ho utilizzato fastify + swagger
