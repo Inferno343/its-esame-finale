@@ -6,7 +6,7 @@ La cartella contiene i seguenti file
 
 // TUTTE LE IMMAGINI SONO CASUALI, PRESE DA UN'API ESTERNA (https://picsum.photos/) //
 
-La schermata è relativa alla "Home" e contiene come descritto nel Punto #3 :
+La schermata scelta è la schermata "Home" e contiene come descritto nel Punto #3 :
 	- Tipo attrazioni (categorie), l'utente al click verrà portato ad una schermata dove potrà visionare SOLTANTO le attrazioni relative a quella categoria
 	- Lista attrazioni, l'utente vedrà una lista con attrazioni miste ed un pulsante che poterà l'utente ad una lista con TUTTE le attrazioni disponibili indipendentemente dalla categoria
 		Cliccando il pulsante "dettaglio" di un'attrazione l'utente viene portato alla PAGINA DI DETTAGLIO dell'attrazione selezionata
