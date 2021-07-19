@@ -8,9 +8,10 @@ export class ServiceApiService {
 
   data = [
     {
+      "id": 0,
       "nome": "Colosseo",
       "localita": ["Roma"],
-      "tipoInterese": ["Storico", "Paesaggistico"],
+      "tipoInteresse": ["Storico", "Paesaggistico"],
       "descrizione": "The Colosseum, also named the Flavian Amphitheater, is a large amphitheater in Rome. It was built during the reign of the Flavian emperors as a gift to the Roman people.",
       "popolarita": 5,
       "stato": {
@@ -90,9 +91,10 @@ export class ServiceApiService {
       }
     },
     {
+      "id": 1,
       "nome": "Piazza San Marco",
       "localita": ["Venezia"],
-      "tipoInterese": ["Storico", "Paesaggistico"],
+      "tipoInteresse": ["Storico", "Paesaggistico"],
       "descrizione": "Piazza San Marco often known in English as St Mark's Square, is the principal public square of Venice, Italy",
       "popolarita": 5,
       "stato": {
@@ -172,9 +174,10 @@ export class ServiceApiService {
       }
     },
     {
+      "id": 2,
       "nome": "Galleria degli Uffizi",
       "localita": ["Firenze"],
-      "tipoInterese": ["Artistico", "storico"],
+      "tipoInteresse": ["Artistico", "storico"],
       "descrizione": "The Uffizi Gallery (Galleria degli Uffizi), is a prominent art museum",
       "popolarita": 5,
       "stato": {
@@ -254,9 +257,10 @@ export class ServiceApiService {
       }
     },
     {
+      "id": 3,
       "nome": "Cinque Terre",
       "localita": ["Firenze", "Roma"],
-      "tipoInterese": ["Paesaggistico"],
+      "tipoInteresse": ["Paesaggistico"],
       "descrizione": "The Uffizi Gallery (Galleria degli Uffizi), is a prominent art museum",
       "popolarita": 5,
       "stato": {
@@ -336,9 +340,10 @@ export class ServiceApiService {
       }
     },
     {
+      "id": 4,
       "nome": "Costiera Amalfitana",
       "localita": ["Pordenone", "Sacile"],
-      "tipoInterese": ["Paesaggistico"],
+      "tipoInteresse": ["Paesaggistico"],
       "descrizione": "The Uffizi Gallery (Galleria degli Uffizi), is a prominent art museum",
       "popolarita": 5,
       "stato": {

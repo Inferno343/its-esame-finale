@@ -1,0 +1,74 @@
+/* Container holding the image and the text */
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+#topImage {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+  
+/* Centered text */
+.centered {
+    position: absolute;
+    font-size: xx-large;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.7);
+}
+
+.category {
+    transform: scale(1);
+    transition: all 0.15s ease-out;
+}
+
+.category:hover {
+    transform: scale(1.15);
+    transition: all 0.15s ease-in;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
+button > a {
+    color:white;
+}
+.categoryImage {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+.categoryBTN {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    background: rgba(0,0,0,0.3);
+    border-radius: 0 0 15px 15px;
+}
+
+.attrazione {
+    background: rgba(255,255,255, 1);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+
+.attrazioneImage {
+    transform: scale(1);
+    transition: all 0.15s ease-out;
+    border-radius: 20px;
+}
+.attrazioneImage:hover {
+    transform: scale(1.4);
+    transition: all 0.15s ease-in;
+}

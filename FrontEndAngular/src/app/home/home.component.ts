@@ -19,8 +19,4 @@ export class HomeComponent implements OnInit {
     this.data = this.api.data;
   }
 
-  navigate(route:any){
-    this.router.navigate(['/details/' + route])
-  }
-
 }

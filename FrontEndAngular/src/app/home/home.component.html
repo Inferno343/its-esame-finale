@@ -1,164 +1,132 @@
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Touring Club</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Attrazioni</a>
+                  </li>
+              </ul>
 
-<div class="container">
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
+          </div>
       </div>
-    </div>
   </nav>
-<!-- NAVBAR -->
+  <!-- END NAVBAR-->
 
-<!-- CAROUSEL -->
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://imgur.com/h96WG6W.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://imgur.com/UAazAEN.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://imgur.com/tCLwTMn.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-<!-- CAROUSEL -->
-
-<!-- TABLE ngFor -->
-<table class="table table-striped">
-  <thead>
-  <tr>
-    <th scope="col">#</th>
-    <th scope="col">Azienda</th>
-    <th scope="col">Posizione</th>
-    <th scope="col">Distanza</th>
-    <th scope="col">Details</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let azienda of data">
-    <th scope="row">{{ azienda.id }}</th>
-    <td>{{ azienda.nome }}</td>
-    <td>{{ azienda.posizione }}</td>
-    <td>{{ azienda.distanza }}</td>
-    <td><a (click)="this.navigate(azienda.id)"  class="btn btn-primary">Go somewhere</a></td>
-  </tr>
-  </tbody>
-</table>
-<!-- TABLE ngFor -->
-
-
-<!-- CARDS ngFor -->
-<div class="row col-12 justify-content-center">
-<div *ngFor="let azienda of data" class="card mx-auto" style="width: 18rem;">
-    <img src="{{azienda.immagine}}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{azienda.nome}}</h5>
-      <p class="card-text">{{azienda.posizione}} | {{azienda.distanza}} km</p>
-      <p class="card-text">{{azienda.descrizioneCompleta}}</p>
-      <a (click)="this.navigate(azienda.id)"  class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-<!-- CARDS ngFor -->
-
-
-
-  
-
-</div>
-
-<footer class="bg-primary text-white mt-2 pt-1 pb-2">
-  <div class="container mt-5 ">
-    <div class="row ">
-
-      <div class="col-lg-4 col-md-6 ">
-        <h3>Site Map</h3>
-        <ul class="list-unstyled three-column">
-          <li>Home</li>
-          <li>Services</li>
-          <li>About</li>
-        </ul>
+  <!-- Main content container -->
+  <div class="container text-center">
+      <div class="imageContainer">
+          <img src="https://picsum.photos/1280/730" alt="colosseum" id="topImage">
+          <div class="centered">Touring Club, la destinazione per la tua mente</div>
       </div>
 
-      <div class="col-lg-4 col-md-6">
-        <h3>latest Articles</h3>
-        <div class="media">
-          <div class="media-body">
-            <h4 class="media-heading">Nuova attrazione</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <h2 class="mt-2 col-12">Tipo attrazioni</h2>
+
+      <div class="row col-12">
+          <div class="col-3 category mt-3 mx-auto">
+              <a href="/categorie/Paesaggistico" class="">
+                  <img src="https://picsum.photos/1280/729" alt="" class="categoryImage">
+                  <div class="categoryBTN">Pesaggistico</div>
+              </a>
           </div>
-        </div>
-
-        <div class="media">
-          <div class="media-body">
-            <h4 class="media-heading">Nuova località</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="col-3 category mt-3 mx-auto">
+              <a href="/categorie/Storico" class="">
+                  <img src="https://picsum.photos/1280/728" alt="" class="categoryImage">
+                  <div class="categoryBTN">Storico</div>
+              </a>
           </div>
-        </div>
-
-        <div class="media">
-          <div class="media-body">
-            <h4 class="media-heading">Novità</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="col-3 category mt-3 mx-auto">
+              <a href="/categorie/Artistico" class="">
+                  <img src="https://picsum.photos/1280/727" alt="" class="categoryImage">
+                  <div class="categoryBTN">Artistico</div>
+              </a>
           </div>
-        </div>
-
       </div>
 
-      <div class="col-lg-4">
-        <h3>Gallery</h3>
-        <img class="img-thumbnail" src="https://picsum.photos/150/100" alt="" />
-        <img class="img-thumbnail" src="https://picsum.photos/150/101" alt="" />
-        <img class="img-thumbnail" src="https://picsum.photos/150/102" alt="" />
-        <img class="img-thumbnail" src="https://picsum.photos/150/103" alt="" />
-      </div>
 
-    </div>
+      <h2 class="mt-5 col-12">Attrazioni disponibili</h2>
+
+      <div class="row col-12">
+
+          <div *ngFor="let attrazione of data" class="attrazione row mt-3">
+            <div class="col-3 my-auto">
+                <img src="https://picsum.photos/1280/72{{attrazione.id}}" alt="" class="img-fluid attrazioneImage">
+            </div>
+            <div class="col-7">
+                <div class="col-12">
+                    <h3 class="text-start fw-bolde">{{attrazione.nome}}</h3>
+                    <div class="col-12 text-start">
+                        <p class="disabled">Tema: <span *ngFor="let tema of attrazione.tipoInteresse">{{tema}} </span></p>
+                        <p>{{attrazione.descrizione}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 m-auto">
+                <button class="btn btn-primary" ><a href="/details/{{attrazione.id}}">Dettaglio</a></button>
+            </div>
+        </div>
+
+
+      </div>
   </div>
-  <div class="copyright text-center ">
-    Copyright &copy; 2021 | Alexandru Simon
-  </div>
-</footer>
+
+  <footer class="mt-5 pt-1 pb-2">
+      <div class="container mt-5 ">
+          <div class="row ">
+
+              <div class="col-lg-4 col-md-6 ">
+                  <h3>Site Map</h3>
+                  <ul class="list-unstyled three-column">
+                      <li>Home</li>
+                      <li>Lista attrazioni</li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                  <h3>latest Articles</h3>
+                  <div class="media">
+                      <div class="media-body">
+                          <h4 class="media-heading">Nuova attrazione</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                  </div>
+
+                  <div class="media">
+                      <div class="media-body">
+                          <h4 class="media-heading">Nuova località</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                  </div>
+
+                  <div class="media">
+                      <div class="media-body">
+                          <h4 class="media-heading">Novità</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div class="col-lg-4">
+                  <h3>Gallery</h3>
+                  <img class="img-thumbnail" src="https://picsum.photos/150/100" alt="" />
+                  <img class="img-thumbnail" src="https://picsum.photos/150/101" alt="" />
+                  <img class="img-thumbnail" src="https://picsum.photos/150/102" alt="" />
+                  <img class="img-thumbnail" src="https://picsum.photos/150/103" alt="" />
+              </div>
+
+          </div>
+      </div>
+      <div class="copyright text-center ">
+          Copyright &copy; 2021 | Alexandru Simon
+      </div>
+  </footer>
